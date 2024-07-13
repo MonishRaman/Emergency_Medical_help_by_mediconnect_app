@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://e1.pxfuel.com/desktop-wallpaper/502/69/desktop-wallpaper-apollo-hospital-hospital-logo.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/de1624b2-ef5c-43fc-a13d-10b4cd652a5c-1704301117376.png?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Girish B Navasundi</h3>
+                    <p><strong>Designation:</strong> Senior Consultant Cardiologist & Certified TAVR Specialist, Lead Consultant - Structural Heart Disease & Heart Failure</p>
+                    <p><strong>Experience:</strong> 21 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/8605d29d-cd66-4c76-9dcf-8001c254102b.jpg?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>(COL) Dr. Vishwanath S</h3>
+                    <p><strong>Designation:</strong> Professor and Senior Consultant- Medical Oncology</p>
+                    <p><strong>Experience:</strong> 12 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/13257775-ab9a-4d25-aad2-94392b15b15f-1710258907313.png?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Ravindra M Mehta</h3>
+                    <p><strong>Designation:</strong> Sr Consultant Interventional Pulmonology &Critical Care Medicine</p>
+                    <p><strong>Experience:</strong> 21 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/93363485-7c2e-4877-b367-453a51ebe5e4-1704301131122.png?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Satish Nair</h3>
+                    <p><strong>Designation:</strong> Head & Neck Surgical Oncology</p>
+                    <p><strong>Experience:</strong> 25 Years </p>     
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/dbe20e07-2abf-42e3-96bb-fba87263c7ab.jpeg?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Prashant Bafna</h3>
+                    <p><strong>Designation:</strong> Consultant - Rheumatology</p>
+                    <p><strong>Experience:</strong> 12 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/30fcb996-1800-46f4-9697-baef3a6cb19c.jpg?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Aashish R Shah</h3>
+                    <p><strong>Designation:</strong> Director – Minimal Access, GI, Bariatric and Robotic Surgery</p>
+                    <p><strong>Experience:</strong> 27 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/3a8183c9-6441-43a4-a906-28f5a69392a4-1705397792600.png?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Satishchandra P</h3>
+                    <p><strong>Designation:</strong> Sr. Consultant & Advisor - Neurology</p>
+                    <p><strong>Experience:</strong> 44 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://images.apollo247.in/doctors/65fa4c9e-eaaf-427b-97da-7d0b9f5cccdd.jpg?tr=w-375,h-150,c-at_max,f-auto" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Manohar T</h3>
+                    <p><strong>Designation:</strong> Chief of Urology Services, Uro-oncology and Kidney Transplantation, Laser, Laparoscopic and Robotic Surgeon Apollo Institute of Renal Sciences</p>
+                    <p><strong>Experience:</strong> 21 Years </p>   
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

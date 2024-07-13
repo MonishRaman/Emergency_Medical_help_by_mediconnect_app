@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('login.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container h2 {
+      margin-bottom: 20px;
+    }
+    .container label {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+    .container input[type="file"],
+    .container input[type="date"],
+    .container input[type="time"],
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .container input[type="submit"] {
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+      .container input[type="file"],
+      .container input[type="date"],
+      .container input[type="time"],
+      .container input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Upload File and Select Appointment</h2>
+    <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+      <label for="file">Choose file to upload:</label>
+      <input type="file" id="file" name="file" required>
+
+      <label for="date">Select date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Select time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+</body>
+</html>

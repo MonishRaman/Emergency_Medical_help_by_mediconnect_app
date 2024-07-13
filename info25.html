@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Doctor</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url('login.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor1-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor1-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor1-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor1-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor1-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor1-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor1-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor1-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Emergency Doctors</h2>
+        <div class="doctor1-list">
+            <a href="https://us05web.zoom.us/j/86537618536?pwd=cCqdyH47fqRZEBvkWxQQopj32Z7LFY.1" class="doctor1-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/11048.png?itok=qsmz6B2K" class="doctor-image">
+                <div class="doctor1-details">
+                    
+                    <h3>
+                        Dr. Srinivas Mahesh Prasad</h3>
+                    <p><strong>Designation:</strong> 
+                        Dr. Srinivas Mahesh Prasad </p>
+                    <p><strong>Experience:</strong> 6 Years </p>   
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</body>
+</html>

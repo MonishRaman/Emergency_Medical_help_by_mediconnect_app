@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap */
+            gap: 20px; /* Space between items */
+            justify-content: center; /* Center items horizontally */
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center items horizontally */
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            width: 100%; /* Take full width of the container */
+            max-width: 400px; /* Limit maximum width for larger screens */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-info img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .doctor-info h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (min-width: 768px) {
+            .doctor-info {
+                flex-direction: row; /* Align items horizontally on larger screens */
+                justify-content: space-between; /* Distribute items evenly */
+                align-items: flex-start; /* Align items to the top */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2022-11/prof.dr_.somashekhar-sp-surgical-oncologist-in-bangalore.jpg.webp?itok=d1uNWDhQ" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Prof. Dr. Somashekhar S P</h3>
+                    <p><strong>Specialist:</strong> Surgical Oncology</p>
+                    <p><strong>Experience:</strong> 40 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2023-03/Dr.%20Rohith%20web%203.png.webp?itok=-dTEyapu" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Rohit Kumar C</h3>
+                    <p><strong>Speciality:</strong> Surgical Oncology, Head and Neck Oncology</p>
+                    <p><strong>Experience:</strong> 10 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2023-02/Dr.-Anoop-P-.png.webp?itok=a8XJ7fB_" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Anoop P</h3>
+                    <p><strong>Speciality:</strong> Haematology, Haemato Oncology & BMT</p>
+                    <p><strong>Experience:</strong> 18 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/CMI%20Bangalore/doctors/Dr.%20CHETAN%20GINIGERI.jpg.webp?itok=UKzgahWK" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Chetan Ginigeri</h3>
+                    <p><strong>Speciality:</strong> Paediatrics & Neonatology </p>
+                    <p><strong>Experience:</strong> 17 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2022-06/dr.ravi-gopal-varma-neurosurgeons-in-bangalore.jpg.webp?itok=X_8zzf4t" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Ravi Gopal Varma</h3>
+                    <p><strong>Speciality:</strong> Neuro Surgery</p>
+                    <p><strong>Experience:</strong> 25 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2022-06/dr.mythri-shankar-nuclear-medicine-physician.jpg.webp?itok=UWzlUnhQ" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Mythri Shankar</h3>
+                    <p><strong>Speciality:</strong> Nuclear Medicine</p>
+                    <p><strong>Experience:</strong> 20 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2022-03/dr-ganeshakrishnan-iyer-best-cardiac-surgeon-bangalore_0.jpg.webp?itok=X3MI-s7J" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Ganeshakrishnan Iyer</h3>
+                    <p><strong>Speciality:</strong> Cardiac Surgery </p>
+                    <p><strong>Experience:</strong> 25 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_filter/public/2022-06/dr.raghavendra-pai-k-anaesthesiologist-in-bangalore.jpg.webp?itok=t3VOKc29" class="doctor-image">
+                <div class="doctor-info">
+                    <h3>Dr. Raghavendra Pai K</h3>
+                    <p><strong>Speciality:</strong> Anesthesiology </p>
+                    <p><strong>Experience:</strong> 25 Years </p>   
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

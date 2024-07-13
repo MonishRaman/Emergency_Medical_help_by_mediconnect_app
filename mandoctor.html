@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-image: url(data:image/png;base64,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);
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-info img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .doctor-info .doctor-details {
+            flex: 1;
+            padding-left: 20px;
+            text-align: left;
+        }
+        .doctor-info h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media (min-width: 768px) {
+            .doctor-info {
+                flex-direction: row; /* Align items horizontally on larger screens */
+                justify-content: space-between; /* Distribute items evenly */
+                align-items: flex-start; /* Align items to the top */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/dr-avnish-seth-organ-transplant-surgeon-in-bangalore_1677482263.webp" alt="Dr. Avnish Seth" class="doctor-image">
+            <div class="doctor-details">
+                <h3>(COL) Dr. Avnish Seth VSM</h3>
+                <p><strong>Designation:</strong> Chairman, Manipal Institute Of Gastroenterology & Hepato-Biliary-Pancreatic Sciences</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/heart-specialist-in-gurgaon-col-dr-monik-mehta.png" alt="Dr. Monik Mehta" class="doctor-image">
+            <div class="doctor-details">
+                <h3>(COL) Dr. Monik Mehta</h3>
+                <p><strong>Designation:</strong> Senior Consultant - Cardiology</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/dr-lt-col-leena-n-sreedhar-hod-mother-and-child-care-obstetrics-gynaecology_1676021186.webp" alt="Dr. Leena N Sreedhar" class="doctor-image">
+            <div class="doctor-details">
+                <h3>(LT COL) Dr. Leena N Sreedhar</h3>
+                <p><strong>Designation:</strong> HOD And Consultant - Obstetrics & Gynaecology, HOD DEPARTMENT OF ACADEMICS AND RESEARCH</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/dr-lt-gen-c-s-narayanan-vsm-hod-neurology.jpeg" alt="Dr. C S Narayanan,VSM" class="doctor-image">
+            <div class="doctor-details">
+                <h3>(LT COL) Dr. C S Narayanan,VSM</h3>
+                <p><strong>Designation:</strong> Chairman, Manipal Institute Of Neuro Sciences</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/physiotherapist-in-bangalore-abraham-s-s.webp" alt="Abraham S S" class="doctor-image">
+            <div class="doctor-details">
+                <h3>Abraham S S</h3>
+                <p><strong>Designation:</strong> Consultant - Physiotherapist</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/best-physiotherapist-in-old-airport-road-bangalore-ashwin-bhat-h.webp" alt="Ashwin Bhat H" class="doctor-image">
+            <div class="doctor-details">
+                <h3>Ashwin Bhat H</h3>
+                <p><strong>Designation:</strong> Physiotherapist</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/col-dr-aradhana-sood-consultant-dermatology-cosmetology1.png" alt="COL(Dr) Aradhana Sood" class="doctor-image">
+            <div class="doctor-details">
+                <h3>COL(Dr) Aradhana Sood</h3>
+                <p><strong>Designation:</strong> Consultant - Dermatology And Cosmetology</p>
+            </div>
+        </a>
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/best-ortho-doctor-in-kolkata-dr-abhishek-nandi.webp" alt="Dr. Abhishek Nandi" class="doctor-image">
+            <div class="doctor-details">
+                <h3>Dr. Abhishek Nandi</h3>
+                <p><strong>Designation:</strong> Consultant - Paediatric Orthopaedician</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

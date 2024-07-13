@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('login.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .details {
+            text-align: left;
+        }
+        .details h2 {
+            margin-top: 0;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="details">
+            <h2>Appointment Details</h2>
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>Time:</strong> <span id="time"></span></p>
+            <p><strong>Uploaded File:</strong> <span id="file"></span></p>
+            <button class="button" id="zoomButton">Join Zoom Meeting</button>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve data from local storage
+        const appointmentData = JSON.parse(localStorage.getItem('appointmentData'));
+        
+        // Display data
+        if (appointmentData) {
+            document.getElementById('name').textContent = appointmentData.name;
+            document.getElementById('date').textContent = appointmentData.date;
+            document.getElementById('time').textContent = appointmentData.time;
+            document.getElementById('file').textContent = appointmentData.file;
+        } else {
+            alert('No appointment data found.');
+        }
+
+        // Zoom meeting URL
+        const zoomMeetingUrl = 'https://us05web.zoom.us/j/89984002054?pwd=k2S8siG9oIZ5vCKbYUVgZym6hrPUdh.1';
+
+        // Handle zoom button click
+        document.getElementById('zoomButton').addEventListener('click', function() {
+            window.location.href = zoomMeetingUrl;
+        });
+    </script>
+</body>
+</html>

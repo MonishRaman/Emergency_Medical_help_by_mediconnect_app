@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://diabetesresearchindia.org/wp-content/uploads/2022/11/BMC-LOGO-1-300x300.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr.K Shankar</h3>
+                    <p><strong>Designation:</strong> Psychiatrist</p>
+                    <!-- <p><strong>Experience:</strong> 27 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. K Seshagiri Rao</h3>
+                    <p><strong>Designation:</strong> General Surgeon</p>
+                    <!-- <p><strong>Experience:</strong> 20 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr B N Thyagaraj</h3>
+                    <p><strong>Designation:</strong> Surgical Gasyroenterologist
+                    </p>
+                    <!-- <p><strong>Experience:</strong> 24 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr R Anil Kumar</h3>
+                    <p><strong>Designation:</strong>ENT Surgeon</p>
+                    <!-- <p><strong>Experience:</strong> 29 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr.M.D. Patil</h3>
+                    <p><strong>Designation:</strong> Cardiothoracic Surgeon</p>
+                    <!-- <p><strong>Experience:</strong> 6 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr.S.S. HARSOOR</h3>
+                    <p><strong>Designation:</strong> Anaesthesiologist</p>
+                    <p><strong>Experience:</strong> 31 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr.S. SACCHIDANAND</h3>
+                    <p><strong>Designation:</strong> Dermatologist</p>
+                    <p><strong>Experience:</strong> 10 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sehat.com/sht-new-img/new/male.png" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Ramesh Krishna </h3>
+                    <p><strong>Designation:</strong> Orthopaedicist</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

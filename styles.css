@@ -1,0 +1,298 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCT_IJSR2uIM7CHLY4J5tzMuA7-zh1KPWsTw&s') no-repeat center center fixed; */
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    background-image:url('home.jpg');
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCT_IJSR2uIM7CHLY4J5tzMuA7-zh1KPWsTw&s'); */
+    color: rgb(0, 0, 0);
+    border-radius: 10px 10px 0 0;
+}
+nav {
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+}
+nav ul ul li {
+    margin: 0;
+}
+nav ul ul li a {
+    padding: 10px;
+}
+nav ul ul li a:hover {
+    background-color: #e0e0e0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCT_IJSR2uIM7CHLY4J5tzMuA7-zh1KPWsTw&s'); */
+    color: black;
+    border-radius: 10px 10px 0 0;
+    font-weight: bolder;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-box input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3888af;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+#options{
+    margin: 20px 0;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+.option {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.option button {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.option button:hover {
+    transform: scale(1.05);
+}
+
+.option .button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.option .image-container {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.option:nth-child(1) .image-container {
+    background-color: #3a04ffba;
+}
+
+.option:nth-child(2) .image-container {
+    background-color: #3888af;
+}
+
+.option .button-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.option .text-container {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.option span {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.option .subtitle {
+    font-size: 0.8em;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.specialists-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.specialist-option button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.circle-button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.circle-button-content:hover {
+    transform: scale(1.05);
+}
+
+.circle-button-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.specialist-option .text-container {
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.specialist-option span {
+    font-size: 1.2em;
+    color: #007bff;
+}
+#common-health-issues {
+    margin-top: 40px;
+}
+
+#common-health-issues h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.common-issue-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.common-issue-option button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.small-circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: white;
+    border: 2px solid #007bff;
+    width: 100px;
+    height: 100px;
+}
+
+.small-circle-button:hover {
+    transform: scale(1.05);
+}
+
+.small-circle-button-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.common-issue-option .text-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.common-issue-option span {
+    font-size: 1em;
+    color: #007bff;
+}
+
+#Choose\ From\ Top\ Specialities .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

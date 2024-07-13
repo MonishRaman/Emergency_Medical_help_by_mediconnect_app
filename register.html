@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('login.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container h2 {
+      margin-bottom: 20px;
+    }
+    .container label {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+    .container input[type="text"],
+    .container input[type="date"],
+    .container input[type="email"],
+    .container input[type="password"],
+    .container input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+      .container input[type="text"],
+      .container input[type="date"],
+      .container input[type="email"],
+      .container input[type="password"],
+      .container input[type="tel"],
+      .container input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form action="/register.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact">
+      <label for="aadhar">Aadhar Card Number:</label>
+      <input type="text" id="aadhar" name="aadhar">
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</body>
+</html>

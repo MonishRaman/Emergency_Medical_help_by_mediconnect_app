@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5i-4S-V6LNOQhC9MC8Dy8ZojBLk5kShGRAA&s);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/Dr-Julian-Crasta.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Julian Crasta</h3>
+                    <p><strong>Designation:</strong> Pathology</p>
+                    <!-- <p><strong>Experience:</strong> 27 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/Purushotham_Manvi.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Purushotham Manvi</h3>
+                    <p><strong>Designation:</strong> Dental Surgery</p>
+                    <!-- <p><strong>Experience:</strong> 20 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/DrVijay.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Vijay Aithal</h3>
+                    <p><strong>Designation:</strong> Dermatology
+                    </p>
+                    <!-- <p><strong>Experience:</strong> 23 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/HOD-Cardiology.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Kiron Varghese</h3>
+                    <p><strong>Designation:</strong>Cardiology</p>
+                    <!-- <p><strong>Experience:</strong> 29 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/Sreenivas.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. V. Srinivas</h3>
+                    <p><strong>Designation:</strong> ENT Head Neck Surgery</p>
+                    <!-- <p><strong>Experience:</strong> 6 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/SridarG.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Govindaraj Sridhar</h3>
+                    <p><strong>Designation:</strong> General Surgery</p>
+                    <!-- <p><strong>Experience:</strong> 31 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/Prashant_Kedlaya.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Prashant G. Kedlaya</h3>
+                    <p><strong>Designation:</strong> Nephrology</p>
+                    <!-- <p><strong>Experience:</strong> 10 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.stjohns.in/medicalcollege/staff/DrThomas_Photo.JPG" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Thomas Mathew</h3>
+                    <p><strong>Designation:</strong> Neurology</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

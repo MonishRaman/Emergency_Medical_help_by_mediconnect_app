@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <meta name="google-signin-client_id" content="705495811219-7ltgrvqlh0b8l5vocpp7g1l3gukp53kf.apps.googleusercontent.com">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('login.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #F8FAFD; /* Optional: Sets a fallback background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container h2 {
+      margin-bottom: 20px;
+    }
+    .container label {
+      align-self: flex-start;
+      margin-bottom: 5px;
+    }
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .container input[type="submit"],
+    .container button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover,
+    .container button:hover {
+      background-color: #45a049;
+    }
+    .container p {
+      margin-top: 20px;
+    }
+    .container a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    .container a:hover {
+      text-decoration: underline;
+    }
+    .profile {
+      display: none;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Adjustments for smaller screens (e.g., tablets and mobile phones) */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+        padding: 15px;
+      }
+      .container input[type="text"],
+      .container input[type="password"],
+      .container input[type="submit"],
+      .container button {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img id="profile-picture" src="" alt="Profile Picture">
+      <p id="profile-name"></p>
+    </div>
+    <h2>Login</h2>
+    <form id="login-form" action="hospitalspage.html" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <input type="submit" value="Login">
+    </form>
+    <button type="button" onclick="signIn()"><b>Sign in with Google</b></button>
+    <p>Don't have an account? <a href="register.html">New User</a></p>
+  </div>
+
+  <!-- Include Google Platform Library -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script>
+    // Function to handle Google Sign-In
+    function signIn() {
+      let oauth2Endpoint = "https://accounts.google.com/o/oauth2/v2/auth";
+      let form = document.createElement('form');
+      form.setAttribute('method', 'GET');
+      form.setAttribute('action', oauth2Endpoint);
+      
+      let params = {
+        "client_id": "705495811219-7ltgrvqlh0b8l5vocpp7g1l3gukp53kf.apps.googleusercontent.com",
+        "redirect_uri": "http://127.0.0.1:5500/hospitalspage.html",
+        "response_type": "token",
+        "scope": "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email",
+        "include_granted_scopes": 'true',
+        'state': 'pass-through-value'
+      };
+      for (var p in params) {
+        let input = document.createElement('input');
+        input.setAttribute('type', 'hidden');
+        input.setAttribute('name', p);
+        input.setAttribute('value', params[p]);
+        form.appendChild(input);
+      }
+      document.body.appendChild(form);
+      form.submit();
+    }
+
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      let regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      let results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Check if user is logged in with Google
+    window.onload = function() {
+      let accessToken = getUrlParameter('access_token');
+      if (accessToken) {
+        fetch('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=' + accessToken)
+          .then(response => response.json())
+          .then(data => {
+            document.querySelector('.profile').style.display = 'block';
+            document.getElementById('profile-picture').src = data.picture;
+            document.getElementById('profile-name').textContent = data.name;
+            document.getElementById('login-form').style.display = 'none';
+          })
+          .catch(error => {
+            console.error('Error fetching user info:', error);
+          });
+      }
+    }
+  </script>
+</body>
+</html>

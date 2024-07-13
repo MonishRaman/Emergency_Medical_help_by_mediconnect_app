@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://www.futurecare-bh.com/administrator/UploadImages/hospital/20191110163618_6d1129ea9397489fa532cda752e99a39.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820243_18.jpg?VersionId=YvANfhXca8wevyBbu8NrsjSAkjs93k9w&itok=NepU2vBt" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Anil Kumar B T</h3>
+                    <p><strong>Designation:</strong> HOD and Sr Consultant-Nephrologist and Transplant Physician</p>
+                    <p><strong>Experience:</strong> 27 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820033_67.jpg?VersionId=C7jzsR02_H6m6SQysexdWK9_8ZToSS6J&itok=edmplFEh" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Rajeev Vijayakumar</h3>
+                    <p><strong>Designation:</strong> Sr Consultant - Medical Oncologist,Hemato Oncologist and BMT Physician</p>
+                    <p><strong>Experience:</strong> 20 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820185_21.jpg?VersionId=aNnyU_Hk8LniL7zTFWK8voNpfYBjw_kF&itok=PquXnPTx" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr P R L N Prasad</h3>
+                    <p><strong>Designation:</strong> Consultant - Interventional Cardiologist
+                    </p>
+                    <p><strong>Experience:</strong> 23 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820265_15.jpg?VersionId=PF9WV3Oq2tab_QkkAmbAmsnGch4ZUPCw&itok=oaiOdKGI" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Hemant H R</h3>
+                    <p><strong>Designation:</strong>HOD and Sr Consultant Critical Care</p>
+                    <p><strong>Experience:</strong> 29 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820171_26.jpg?VersionId=zwVL0w_7D4xvHWDRFJpxGWffWkWUmHgR&itok=1Z8p-vZI" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Raghavendra B R</h3>
+                    <p><strong>Designation:</strong> Dentist</p>
+                    <p><strong>Experience:</strong> 6 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_901144_25.jpg?VersionId=mNLBnzELzXoWiR4_zI.VbJEUokXQiadK&itok=kHuvfZwi" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Srinath Aswathiah</h3>
+                    <p><strong>Designation:</strong> Consultant - Diabetologist & Endocrinologist</p>
+                    <p><strong>Experience:</strong> 31 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820198_20.jpg?VersionId=qTD_FTCo8AuWWGhrV37EGoXPQFtyxKJn&itok=4jJDm-gE" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Kranthi Mohan</h3>
+                    <p><strong>Designation:</strong> Consultant - Neurologist</p>
+                    <p><strong>Experience:</strong> 10 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.gleneagleshospitals.co.in/assets/styles/doctor_profile/s3/doctors/migrate/m_820002_24.jpg?VersionId=JctBsr4J4rim3WvwxiIDZHrFRX1Y56ec&itok=gJDgJBf5" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr Chetana T Nayak</h3>
+                    <p><strong>Designation:</strong> Consultant - Ophthalmologist</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

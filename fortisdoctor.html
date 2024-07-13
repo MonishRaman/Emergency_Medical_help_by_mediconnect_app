@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-image: url(data:image/png;base64,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);
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+            gap: 20px; /* Space between items */
+            justify-content: center; /* Center items horizontally */
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center items horizontally */
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            width: 100%; /* Take full width of the container */
+            max-width: 400px; /* Limit maximum width for larger screens */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .doctor-info h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: left; /* Align text to the left */
+        }
+        @media (min-width: 768px) {
+            .doctor-info {
+                flex-direction: row; /* Align items horizontally on larger screens */
+                justify-content: space-between; /* Distribute items evenly */
+                align-items: flex-start; /* Align items to the top */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/2242.png?itok=xe4B8nn8" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Vivek Jawali</h3>
+                    <p><strong>Designation:</strong> CHAIRMAN CARDIAC SCIENCES</p>
+                    <p><strong>Types:</strong> Cardiac Sciences | Adult CTVS (Cardiothoracic and Vascular Surgery) | Heart Transplant| Thoracic Surgery</p>
+                    <p><strong>Experience:</strong> 39 Years</p>
+                </div>
+            </a>
+
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/3519.png?itok=Zzp-FyGj" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Mohan Keshavamurthy</h3>
+                    <p><strong>Designation:</strong> SENIOR DIRECTOR UROLOGY</p>
+                    <p><strong>Types:</strong> Urology | Urology | Paediatric Urology | Uro-Oncology | Kidney Transplant | Robotic Surgery
+                        Organ Transplant | Kidney Transplant</p>
+                    <p><strong>Experience:</strong> 26 Years</p>
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/2326.png?itok=bI62gdTB" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Murali R Chakravarthy</h3>
+                    <p><strong>Designation:</strong> SENIOR DIRECTOR ANAESTHESIA</p>
+                    <p><strong>Types:</strong> Support Specialties | Anaesthesia</p>
+                    <p><strong>Experience:</strong> 34 Years</p>
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/496.png?itok=z8k0py40" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Narayan Hulse</h3>
+                    <p><strong>Designation:</strong> SENIOR DIRECTOR ORTHOPAEDICS</p>
+                    <p><strong>Types:</strong> Orthopaedics | Orthopaedics | Orthopaedics and Joint Replacement | Robotic and Computer navigated Joint reconstruction</p>
+                    <p><strong>Experience:</strong> 21 Years</p>
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/3320.png?itok=V2Lwsc_U" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Vivek Jawali</h3>
+                    <p><strong>Designation:</strong> CSENIOR DIRECTOR MEDICAL ONCOLOGY</p>
+                    <p><strong>Types:</strong> Oncology | Medical Oncology | Hemato-Oncology
+                        Haematology | Paediatric Haematology and BMT</p>
+                    <p><strong>Experience:</strong> 22 Years</p>
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/55.png?itok=_VBaSLV3" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Deshpande Vasudevarao Rajakumar</h3>
+                    <p><strong>Designation:</strong> DIRECTOR NEURO SURGERY</p>
+                    <p><strong>Types:</strong> Neurosurgery | Neurosurgery | Neuro and Spine Surgery</p>
+                    <p><strong>Experience:</strong> 31 Years</p>
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/3649.png?itok=a2D8dZ56" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Ravindra B S</h3>
+                    <p><strong>Designation:</strong> DIRECTOR & HOD GASTROENTEROLOGY</p>
+                    <p><strong>Types:</strong> Gastroenterology and Hepatobiliary Sciences | Gastroenterology</p>
+                    <p><strong>Experience:</strong> 15 Years</p>
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.fortishealthcare.com/drupal-data/styles/doctor_listing/azblob/doctors/1368.png?itok=XDeb_l53" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Sheela Murali Chakravarthy</h3>
+                    <p><strong>Designation:</strong> DIRECTOR INTERNAL MEDICINE</p>
+                    <p><strong>Types:</strong> Internal Medicine | General Physician | Internal Medicine</p>
+                    <p><strong>Experience:</strong> 38 Years</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

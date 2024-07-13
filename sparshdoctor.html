@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAABelBMVEX///8MTKLn5+fq6uqXqs/ybSDa29339/fz8/MARqDh4+UARJ+7FC7c3+G5AAAAQZ4APZ3cTycAOpzXSCi+Gy1gf7jpYSTmXSW8ABbgVSbURCnZ0dOBl8Xd5ecAOJtmhb2NocrIMCvVuru+EyXQPirCJC3I0uXHLiy7AA6xwNy8ABzLWGDP09qisdPXhovCMj7foaWqq6767u/x1tfIS1Tn7PS3xN2FhovMYGiRkpaztLb0bR3xYQDFZVFTbare5O/25OacnaHDxMbWOQvNYVzjTQDWa1r8bwz2mnEyX6p1jsAYUaTls7bYiY7DOEPRcXfqw8Z6e4DMJg/MGADfcVnWPxjxf06zAADfjIL32tPSTDv/7eTinJf91sLaQw7qlX71vqzfTBHiaEbhajT4r5BuVoZ8WYCwYWJAUZeeWGrtgFheVIyDSnXLZkxjPoGrNk2GWnuyIDxqPHw+QZGVSmmkTmCgKlF8OG+6XWija4BubZ6xSlN4H2IAKpdukRE7AAAQE0lEQVR4nO2djV/bRprHbd6MsLA91qC3cAZVI0uY8GIwLwECBJajBgIsKXubpu02aZt9ve52s3e7d7393+95RrI1I5xu2qSQ6DO/OLY00kiar57nmWdkyRQKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSoNVelvddQPenSbG3lLjd92Cd6YhqV337v1IEJO5QjEkzD29qFSu7OjKPrThdRXB2yG+XSUlEX/HBXaE/3/xb7lCMSEXLB9Saugh0w3qMZgyAngjNHApwynqUhoy+B9SSr35XKMorF5Tz9OJzkJkAERCVzfhgxId2HgeRRoMPkLPzzmKwrMKtBrswNAtHSeYFxJkwuANX47OgYQezRuKoRtlq7YReNh6U+cMAjcEOA4YhW6E6DHcQ4CGn69YMfnR/o3Cy4iARTi6SR14RwpuCBwcnRk6uEboUvygAcuXVUx+dHazdN6B808CEhIOI/7HGMx4EFINXTc8jBc5c5DJjzZvlu4/MajjuYyRACBQABIQCnZCEQbRKQkgeAZ5ixWTHz0ZULx8BB5iBcQIAABjhucAGuZSU4cQSh0KpgGdKctbrKisDij/5NoIAYbhAQ+HjgIWCB26RQENmAd2JzQ0cmcVlc/S2f0eltKvIkBguZ7luVZoMQZuEgIAi4bgJsSDXIvpuUNxpaez7n/8ujf5+OiaWS5/kcAMHNcBLzEpIzrAgIgB4cL795yhsA+f9mc/tVqf9Mbdzz4zHcOwiGuYnmECDRNChQuZBtEDwnSduWHerML2L/qziy3TP/psJZn7/AtCHIsYZJSRmIXjUguyLMg5GWRbuXOQQy/qX4B5dqibwdGT36CdlL48chzHMi2HOKbhmh6w8DxLZwDDhWgBOUbuHMS7TgPnZ0fQXsc9+uL5ztGRYyYCFhZDFg6kF67OHAybkGblzSpsiH9pQWiGJjMNMAYLIYyO8neLWCbaheuZIfAAEBAtKM1bXnHoMj/NOFeuLMMhHMRoX4jDAEIedCYWgf6UhDplhpE3FDY4/eGX/ZJnR4bpSCA4DAsKieU5DnUtAzgQCJu5c5BDRnU9WukXPcUYMZqVaULstCC3sDzqOhg1Azd/YTN0DeIG6WX8lRc7Sfu3t7cFFpaFLCDTCGEIQggLcmcVV4EOp/j6hVD6m5jF9sOHX20f93CAjxDg4IWG47hQh3pu3qziihiGwQJ/Xvh65+sdaP/xN1Wtevryt18dH3Ma4CIEci2HIQUCytllXgyb/AyT586ztPzpr3bAKMrFYlHTyqcvH4JxgFlYjsFcyLsIC6GSnrsLeocGOL7hMi+siBe0vtzZPv7qdwgDcWgvXxxvxyw8jxloE4aROwdBq9BpgA08+kM6MiuUPt45Pn6YwCiCbfweI6dDAEZAdV4pbw4CVsHPMgHLdyQYzxDGiz8mMMA2/uTgsAQ9hFtF/jpTPVYAhuEaAOPzdDHA2Dn+z1Ot2KPxrQFWAb7E7SJ3VnFlED7cANuHgAFhcWdHhrF9/LJnGKA/X8E6MHYHOZ/kDEViFSGDfAEH5MBlZ/vr1E+ebm8fvxAM4yXGziCXsSJyeaxwvSBgyIKPP3Z2dj7+POlcn0K/evyXat8utO9CzCtyGCt4tkk9iJrE84iFV2viXHNnZ/vjrz9/+uxrzD2PH56mTvIpTzfzZxU2DigMj+pgEwYjFhGGpYADFE+Ovkqd5DswC0hR84aCj0wDA1JIGH8TBl2lOWBkCrnmzjd9FsVzD7PNvDmIDRxMI9ApMT1qmeGoYVmjN1hgdnUksLi2SA5Hpi46PnNISB0nNCxmEtPKosDLFcRyv+2j+GsrYLkLm9CZQrTw9BCvUJkQPl1+WVdyErzAh1f0vnjVZ9Hxchg2mQHRInQMGloMr3dDzwqGESu+rmmZ25BwuBZjZr8feXVtuHkbmWJnygjTA8fQiUVNz+JOAh3JaJyFmuS3f/vbL5znDnQv/n/1zeK/83fXja0zA/oDQmhgedSEN8LAFyywDUjGoT/5vabhWOybPz93Q9Puo/jjde6+HbsyQqp7TgCRU2emboXgIMwMHdNg/Jux7W813nFoxVeOo5t/6rMIchc2rygNDBfMwgA/0SEBtwILBmWeZYWORVzLuv7+ZdKJvvr0WvCQv7dy5yCUuRg2Ax2AOCywdFM3Q/wijGHKZTqe87yTsND+cfT3NP+2c+cgbkB1l+l4A4nj6UDCIyGEz5BYoUVCkzGLWku9lPt3KYni93lzkIjSEJJNNAt4WTqMwJ2ABISEo9QhAcQOh1r+Q614Q3/NoYNAtsQgWiCJIIzv2XTAUUaBB96i5xHPvf7LABa5Q8ECfkuqTrhZODok4oSauhMCASPAWzdHgc7zVzdIaP/IGYorym9f10moM6a7GC2MwGUhXt1jRmCAXVjUoeT7G2ah/U/OUNgUn2+gRkA9SDn5Yw/8fmZKqOsBFM8IPRfKb5qF9r8TOUMRMMqfbAhcSL4RhhvCm8PvdDcCD4xDj+92v4FidyhfKCIPPYSTSB5zQAb4IASfCF0+6Ya6812WRe5Q4D38SII7Cj4WE+KTMV6Cgj8gAyAMfAji23xbhU2DxC7wOQ9DB+vAJz/4Q1O6iygMyp+cgk/7+1yjqERXUcT/H/KPQ/46ij/Ttyt4VaInT/6vVq8lauQLBT5R+SN1P1WeHq4cnng7TeYHhZKSkpKSkqzS3FS3XKtVT3en19eE8ubulKCT2eaNmrO4YCZTuCbWmjkZuVGttHDS29+c2L/u8QrpHaGlGSzYe8vW/RiN1Gu9C7PlWmNqL6UxVdVSlcv10+xhLdSgvJvd4HRNrFat1aelxbONqrC/GWF/01WtsS6sOVfXarPvoolvptJprVisNerVar2BSLTGVH/ZDMxXe5kz3knTyJxh3qBsYWG6XCyW+9VwGyKtbnZ/XbFiTUJRK5Zn31VD/7V2y8Vyt8nPzFrzpFEtNtKzBCiqc81Ec/gN6KlUd73Gz+2UvEVsUXm2V219F1aqpnYB+6t215P9zdSrxfqeWFFGUb1NFHsNqSnjCzXB9QFFPQVTgjY1xFhS2NWK3W5RbAwXtKgqtGgB6mnC/son6bLSiOg9d2sVC9ViTWrJrNBYRCEshJbXRWeAZtWbcOa0XXmbiGJOmO8KCGfLIl3QybhU8Q5RwKFVF1638CaKmogCmgh+Dv7ekM0ii2JXQJFtbbbi3VpFsTaz3mzu7a2tZRfKDrKWcZBmnR84bCETLTIO0mxAsOjNAPpi7WRu8P4yFQvrtxor1v6JgQ8ifb3eaDSKUyPi8QEK7WQ61skUurzYFYCRFPGzmg0h0CJtZmQ20VS9KISHPdwfdLDJ/nYXxuWKxWo9FfZEsz9HqwdrriF+ZaFV/ym4C3amkE/EwulTockQKWLXghMtRsK4Rf1qcb00b1rP7K8xJ1fM6DZRFNan6vVatQrHHB+j4PgSinK10RVPPjo2byE6TrUgL+GPhSQbzKRmzV15f/V1qaJWTaXdMgrQXnNuYfZkZrdblZ1AdJDp2QU5OEIE6HIvGIHwKYVebNHuCYqnIgs3Mu/e/k5rPDERK2onC6lOtFtHkWodDr7Rt2Y5bMoawewzNpei1B4x+mHErP3QIKIpmWG2B1m/3WyzILcV0oT00DKdqSTMp/uCBgtmIXSms3ja5T3IcyNloYO+48R7Tx5NwaGl3cEPoICjrC3MJcJ8MrUlKa+YKsvdTmFNzt1h3fr7gqJb2xV8GdOM9Fh/AEVXSiagX62O9OdEFKWyNALB/YnD7iZALIsV7xAFeLPW2F1orsFJHYfhEZzetHd7PQo4SDEHx3FZSlDKNhfkxAzyMhj7xvtb4/urz0oV7w7FaZ337pDxQNaDg+aGcApfj+I0M0iF+fR8yol3VxNdpFrXMvtLremOrWKt2W1U+48BQuog9nxTVa0xEEWzodWlkctcXbiEM13TBNNaa2haf/hZWmvuNqqaNnh/ULEuoWjc6qUbONa5k24RT1F3akEK782pmZmZ6QE1xmeyC0Zg1amk+Ws4naafJdzK1Kywv4WT3Xh/M3KqsodrShf0UDcvIyopKSkpKb1PGp8ded+lOlMlJSUlpQ9ZK/v7g/7Sy2uK/4VWXzP93qgTJT9wtV+Jon1p0aJfqUSVpceZGo99KIVikcZZxY7lb64IxZuVynJ/Zrm3jm1H8wW5cvY3sVda0cCfyf5Z9bhVSQ5+yV+SjubcbsHBV1p2R6qwGLWgrBLZtsBopUJbFZTdosK6y60obdAyLvcpxQ8JxWpEIxEgquO3fnqbfqLg1O/HUzKKlSW/sgwHuH8RtUQWq5XWMthD6fK8Ihz+SqX1GP/q0sqZ3Up/x1hGsbpSKhU2fRs+SpfiIXR835dx3xmKgVZx0YqSX4ZbtiPhN+LObD+ZWhbWBhTJrC9uRULBtelH2SNYtluPW9GlXHg3KKLLVS4ZReSf9yap8BO0hUuw8cXls8t9aSt9FJe2Lxj/G6HwW4sFO91brLtBwZ2Xu7GAYr/iL/amNyVG85HfakEM8cWfE4RYwdWKWqLbvwmKMxvM8oZZ3A0K/2IR9Zj6b4SicLZJIWi2aEU4+H7Y9C/EAPgmKNAoCmAW0j7uOFacS0cjmKzvZ/4qSGll9XLZF37nnYfNFZScb7wBisvI71xcXFAqr/k+9SAXLbsXNmXj7QHYbAlBIQ2bkt4ABZyA86WlpfNMJ/I+oSid+1Hcmdpim6Ez7ZxBBeg1baHxPxnFZZTElky0gA62xM1sZT/Tt/x8WrT7nWlLctdSJ4L8CrIsOR967EOq2YKEMxJj/krFHojiRhq52apI8+d2LyRFrXPBuzqwi0SDNvxzqLQ530kS7858Z19adnlx3vLPF7Nn5XIRrHdpU/oDS2ed+c0Bw5KL+Y7ckJX5+Y64vcXOfOJwuPs0+MBcT+e3heIDUDYnV1JSUlK6ew0Nfwi6HRQfhG4FhZKSkpLSrWsC+7uh8WG8L3oYXqDJQiHuBiH4T47xBfA2jE9GjY0V4qnScDyQ5QW9WvE6UDmuPxSX/4Qv4u5G7fajB+1H47+E7n/sQeH+RhsKYLLdhql7wxvtrY2DwsQGrLh1UDiA2QdbhfYBoPglthoK2hsThXtYqw3zD+7xTR4U2o+g4GCMb+2DQQHNhqYXNsb5BJ+OtVFKmrYxMRyjGNrAP7N+wFHwCsO81sb4WDup8whtBKG17/Mtb9xqQ95e9zmKByBAAe9JuwBFCXFAy2MU9+8nS9q4bsIOVxzr10pRQMmYuLUPQzGK0iCr2MCmCVaBSfRYoc1thVsFrDMx0CrQcD48qzjA5iex4t6Dra0t3jAeDCY22gcbW+Aojw7a0Patja0tOM1irNjaAlz3egAfPYLqY30U9zZwa7czCHknGoeOojQ0zifGcdCAfQGU8HCX/LDk0NgEL+QdytBwf3FpEjuI4d44g485sOcZGo63DJpQP6alpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpPQ+6f8B+sd9oXpcoWIAAAAASUVORK5CYII=);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7PmVwxCfs4qobwDz0OSALd5KzgTC4EFJRQT0pCWnLrOj5OSQP" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Abhilash Bansal</h3>
+                    <p><strong>Designation:</strong>Senior Consultant Neurosurgeon and Spine Surgeon.</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB--LgmoIcn2DZDW86yukMJ4hFUFjUdjMqNET8maociVTdyMEH" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>
+                        Dr. Nidhi Rawath</h3>
+                    <p><strong>Designation:</strong> Consultant Microbiologist</p>
+                    <!-- <p><strong>Experience:</strong> 12 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/Dr.-Nagaraj-S.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Nagaraj S</h3>
+                    <p><strong>Designation:</strong> Consultant Rheumatologist
+                    </p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/Dr.-Sandeepa.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Sandeepa HS</h3>
+                    <p><strong>Designation:</strong> Consultant Interventional Pulmonologist</p>
+                    <!-- <p><strong>Experience:</strong> 33 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/dr-rolson-sandeep.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. A Rolson Sandeep Kumar</h3>
+                    <p><strong>Designation:</strong> Consultant Maxillofacial Surgeon</p>
+                    <!-- <p><strong>Experience:</strong> 12 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/Dr-Poorna-Chandra.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Poorna Chandra K S</h3>
+                    <p><strong>Designation:</strong> Chief Consultant Medical Gastroentrologist & Hepatologist</p>
+                    <!-- <p><strong>Experience:</strong> 27 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://www.sagarhospitals.in/wp-content/uploads/2024/01/Dr.Arun-L-Naik.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Arun L Naik</h3>
+                    <p><strong>Designation:</strong> Sr. Consultant Neurosurgeon</p>
+                    <!-- <p><strong>Experience:</strong> 44 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://www.sagarhospitals.in/wp-content/uploads/2024/01/dr-priyanka.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Priyanka H K</h3>
+                    <p><strong>Designation:</strong> Consultant Gynaecologist</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

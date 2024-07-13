@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f0f2f5; */
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-info {
+            flex: 1;
+            text-align: left;
+            padding-left: 20px;
+
+        }
+        .doctor-info h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .doctor-image {
+            flex: 1;
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        
+        
+       
+
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/dr-avnish-seth-organ-transplant-surgeon-in-bangalore_1677482263.webp" class="doctor-image">
+            <div class="doctor-info">
+                <h3>(COL) Dr. Avnish Seth VSM</h3>
+                <p><strong>Designation:</strong> Chairman, Manipal Institute Of Gastroenterology & Hepato-Biliary-Pancreatic Sciences </p>
+                <!-- <p><strong>Qualification:</strong> MBBS | MD(Medicine) | DM(Gastroenterology) From PGIMER Chandigarh</p> -->
+                <!-- <p><strong>Experience:</strong> 39 Years </p>    -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/heart-specialist-in-gurgaon-col-dr-monik-mehta.png" class="doctor-image">
+            <div class="doctor-info">
+                <h3>(COL) Dr. Monik Metha</h3>
+                <p><strong>Designation:</strong> Senior Consultant - Cardiology</p>
+                <!-- <p><strong>Qualification:</strong> DM (Cardiology) - 2003 From Armed Forces Medical College (AFMC), University Of Pune | MD (Medicine) - 1991 From Army Hospital, University Of Delhi | MBBS -1983 From Armed Forces Medical College (AFMC), University Of Pune | Fellowship In Cardiac Electrophysiology</p> -->
+                <!-- <p><strong>Experience:</strong> 26 Years </p>   -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/dr-lt-col-leena-n-sreedhar-hod-mother-and-child-care-obstetrics-gynaecology_1676021186.webp" class="doctor-image">
+            <div class="doctor-info">
+                <h3>(LT COL) Dr. Leena N Sreedhar</h3>
+                <p><strong>Designation:</strong> HOD And Consultant - Obstetrics & Gynaecology, HOD DEPARTMENT OF ACADEMICS AND RESEARCH </p>
+                <!-- <p><strong>Qualification:</strong> MBBS (1987) From Maulana Azad Medical College, New Delhi | MD (1992) From VMMC And Safdarjung Hospital | FICMCH</p> -->
+                <!-- <p><strong>Experience:</strong> 34 Years </p>   -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/dr-lt-gen-c-s-narayanan-vsm-hod-neurology.jpeg" class="doctor-image">
+            <div class="doctor-info">
+                <h3>(LT COL) Dr. C S Narayanan,VSM***</h3>
+                <p><strong>Designation:</strong> Chairman, Manipal Institute Of Neuro Sciences  </p>
+                <!-- <p><strong>Qualification</strong> MBBS From Armed Forces Medical College, Pune (1979) | MD (Medicine) From Armed Forces Medical College, Pune (1988) | DM (Neurology) From All India Institute Of Medical Sciences (1998)</p> -->
+                <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/physiotherapist-in-bangalore-abraham-s-s.webp" class="doctor-image">
+            <div class="doctor-info">
+                <h3>Abraham S S</h3>
+                <p><strong>Designation:</strong> Consultant - Physiotherapist </p>
+                <!-- <p><strong>Qualification:</strong> OQUALIFICATION : -->
+                    MPT | MBA</p>
+                <!-- <p><strong>Experience:</strong> 22 Years </p>    -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/best-physiotherapist-in-old-airport-road-bangalore-ashwin-bhat-h.webp" class="doctor-image">
+            <div class="doctor-info">
+                <h3>Ashwin Bhat H</h3>
+                <p><strong>Designation:</strong> Physiotherapist</p>
+                <!-- <p><strong>Qualification:</strong> MSc Exercise And Sports Sciences (MAHE, Manipal) | PG Diploma Sports Biomechanics (Robert Gordon University, Scotland And MAHE, Manipal) | Bachelor Of Physiotherapy (MAHE, Mangalore)</p> -->
+                <!-- <p><strong>Experience:</strong> 31 Years </p>    -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/col-dr-aradhana-sood-consultant-dermatology-cosmetology1.png" class="doctor-image">
+            <div class="doctor-info">
+                <h3>COL(Dr) Aradhana Sood</h3>
+                <p><strong>Designation:</strong> Consultant - Dermatology And Cosmetology </p>
+                <!-- <p><strong>Qualification:</strong> QUALIFICATION : -->
+                    MD (Dermatology, Venereology & Leprosy) | DNB (Dermatology & Venereology)</p>
+                <!-- <p><strong>Experience:</strong> 15 Years </p>    -->
+            </div>
+        </a>
+        <a href="appointment.html" class="doctor-info">
+            <img src="https://www.manipalhospitals.com/uploads/doctors_photo/best-ortho-doctor-in-kolkata-dr-abhishek-nandi.webp" class="doctor-image">
+            <div class="doctor-info">
+                <h3>Dr. Abhishek Nandi</h3>
+                <p><strong>Designation:</strong> Consultant - Paediatric Orthopaedician </p>
+                <!-- <p><strong>Qualification:</strong> MS | Post Doctoral Fellow In Paediatric Orthopaedics</p> -->
+                <!-- <p><strong>Experience:</strong> 38 Years </p>    -->
+            </div>
+        </a>
+        
+
+        <!-- Add more hospital buttons as needed -->
+        
+    </div>
+</body>
+</html>

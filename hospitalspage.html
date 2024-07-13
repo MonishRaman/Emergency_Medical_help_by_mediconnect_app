@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(login.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h2{
+            color: white;
+        }
+        .container {
+            background-color: transparent;
+            background-image: url();
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        .hospital-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            overflow: hidden;
+            transition: background-color 0.3s;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        @media (min-width: 768px) {
+            .hospital-button {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        .hospital-button:hover {
+            background-color: #0056b3;
+        }
+        .hospital-info {
+            flex: 1;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .hospital-info h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .hospital-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .hospital-image {
+            flex: 1;
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Hospitals</h2>
+        
+
+        <a href="fortisdoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1669877429754_79qbt_1040x500.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Fortis Hospital</h3>
+                <p><strong>Address:</strong> Fortis Hospital
+                    Building No. 119, Survey No. 23, 80 Feet Main Road, Nagarbhavi 2nd Stage, Krupa Layout, Bengaluru</p>
+                <p><strong>Phone:</strong> 080 22260882</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <!-- <p><strong>Email:</strong> Hospital Email Address</p> -->
+            </div>
+        </a>
+        <a href="mandoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1669877527862_ouygs_1040x500.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Manipal Hospital</h3>
+                <p><strong>Address:</strong> No. 98, HAL Old Airport Road, Bangalore</p>
+                <p><strong>Phone:</strong> 1800 102 4647</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <p><strong>Email:</strong> info@manipalhospitals.com</p>
+            </div>
+        </a>
+        <a href="apollodoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1669877811391_ja8f4_1040x500.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Apollo Hospitals</h3>
+                <p><strong>Address:</strong> Apollo Hospitals
+                    154, 11, Bannerghatta Main Rd, Krishnaraju Layout, Amalodbhavi Nagar, Panduranga Nagar, Bengaluru</p>
+                <p><strong>Phone:</strong> 080 2630 4050</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <!-- <p><strong>Email:</strong> Hospital Email Address</p> -->
+            </div>
+        </a>
+        <a href="narayanadoctors.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/comp/bangalore/p9/080pxx80.xx80.140218171736.b4p9/catalogue/narayana-hrudayalaya-hospital-bommasandra-industrial-area-bangalore-coronavirus-testing-centres-private-uojeq6ialn.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Narayana Hrudayalaya Hospital</h3>
+                <p><strong>Address:</strong> Sector 6, HSR Layout, Bengaluru, Karnataka</p>
+                <p><strong>Phone:</strong> 180 0309 0309 · +91 97384 97384</p>
+                <p><strong>Timings:</strong> 07:00 pm - 09:00 pm (Mon-Sat)</p>
+                <p><strong>Email:</strong> info.hsr@narayanahealth.org</p>
+            </div>
+        </a>
+        <a href="asterdoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1669878040429_y6eb7_1040x500.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Aster CMI Hospital</h3>
+                <p><strong>Address:</strong> No. 43/2, New Airport Road, NH.7, Hebbal, Sahakara Nagar</p>
+                <p><strong>Phone:</strong> 080 4342 0100</p>
+                <p><strong>Timings:</strong> 08:00 am - 08:00 pm</p>
+                <!-- <p><strong>Email:</strong> Hospital Email Address</p> -->
+            </div>
+        </a>
+        <a href="sagardoctor.html" class="hospital-button">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi8SBKiZ6QEZ2sZ72qqrUYDXIz-3-kfDuNg&s" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Sagar Hospital</h3>
+                <p><strong>Address:</strong> 44/54, 30th Cross, Tilaknagar, Jayanagar Extension</p>
+                <p><strong>Phone:</strong> 
+                    080 69555555</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <p><strong>Email:</strong> infobsk@sagarhospitals.in</p>
+            </div>
+        </a>
+        <a href="sparshdoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1669878143501_3f0pn_1040x500.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Sparsh Super Speciality Hospital </h3>
+                <p><strong>Address:</strong> 4/1, Tumkur Main Roadd, Yeshwanthpur Industrial Area, Phase 1, Yeswanthpur, Bengaluru</p>
+                <p><strong>Phone:</strong> 080 61 222 000</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <!-- <p><strong>Email:</strong> Hospital Email Address</p> -->
+            </div>
+        </a>
+        <a href="bgsdoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/comp/bangalore/d1/080p1231233661g9r9d1/catalogue/bgs-gleneagles-global-hospital-kengeri-bangalore-hospitals-xe4fznki9n.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>BGS Gleneagles Global Hospital</h3>
+                <p><strong>Address:</strong> 67, Uttarahalli Main Rd, Sunkalpalya, Bengaluru, Karnataka</p>
+                <p><strong>Phone:</strong> 1800 1231 1111</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <!-- <p><strong>Email:</strong> Hospital Email Address</p> -->
+            </div>
+        </a>
+        </a>
+        <a href="bbhdoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/comp/bangalore/k7/080pxx80.xx80.160701121711.t3k7/catalogue/bangalore-baptist-hospital-hebbal-bangalore-hospitals-fobdwn7ces.jpg?clr=#0a5c5c?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Bangalore Baptist Hospital</h3>
+                <p><strong>Address:</strong> Bellary Rd, Vinayakanagar, Hebbal, Bengaluru</p>
+                <p><strong>Phone:</strong> +91 – 80 – 22024700
+                    +91 – 80 – 46404700
+                    +91 – 9448496602</p>
+                <p><strong>Timings:</strong> Open 24x7</p>
+                <p><strong>Email:</strong> talk2us@bbh.org.in</p>
+            </div>
+        </a>
+        <a href="johndoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1669878526880_35z8q_1040x500.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>St Johns Medical College & Hospital</h3>
+                <p><strong>Address:</strong> Sarjapura Main Road, Koramangala, Bangalore</p>
+                <p><strong>Phone:</strong> +91 080 22065000 / 5001</p>
+                <p><strong>Timings:</strong> Open 24x7 </p>
+                <p><strong>Email:</strong> sjmch.infodesk@stjohns.in</p>
+            </div>
+        </a>
+        <a href="victoriadoctor.html" class="hospital-button">
+            <img src="https://content.jdmagicbox.com/quickquotes/listicle/listicle_1698260438857_z0fns_619x617.jpg?impolicy=queryparam&im=Resize=(1080,384),aspect=fit&q=75" alt="Hospital Name" class="hospital-image">
+            <div class="hospital-info">
+                <h3>Victoria Hospital</h3>
+                <p><strong>Address:</strong> SKPTCL Block, Mysore Road, Kalasipalyam, Bangalore</p>
+                <p><strong>Phone:</strong> 080-2670 1150 Ext 201-202</p>
+                <p><strong>Timings:</strong> Open 24x7 </p>
+                <p><strong>Email:</strong> victoriahospitalbangalore@ymail.com /msvh1900@gmail.com</p>
+            </div>
+        </a>
+
+
+        <!-- Add more hospital buttons as needed -->
+        
+    </div>
+</body>
+</html>

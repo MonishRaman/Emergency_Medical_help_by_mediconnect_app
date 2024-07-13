@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(data:image/png;base64,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);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://www.sagarhospitals.in/wp-content/uploads/2024/05/Dr.-Vishruth-K-Raj.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Vishruth K Raj</h3>
+                    <p><strong>Designation:</strong> Consultant Urology & Robotic Surgeon</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/04/Dr.-Shweta-Vivek-Gadge.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Shweta Vivek Gadge</h3>
+                    <p><strong>Designation:</strong> Consultant ENT</p>
+                    <!-- <p><strong>Experience:</strong> 12 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/Dr.-Nagaraj-S.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Nagaraj S</h3>
+                    <p><strong>Designation:</strong> Consultant Rheumatologist
+                    </p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>   -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/Dr.-Sandeepa.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Sandeepa HS</h3>
+                    <p><strong>Designation:</strong> Consultant Interventional Pulmonologist</p>
+                    <!-- <p><strong>Experience:</strong> 33 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/dr-rolson-sandeep.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. A Rolson Sandeep Kumar</h3>
+                    <p><strong>Designation:</strong> Consultant Maxillofacial Surgeon</p>
+                    <!-- <p><strong>Experience:</strong> 12 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_799/https://www.sagarhospitals.in/wp-content/uploads/2024/02/Dr-Poorna-Chandra.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Poorna Chandra K S</h3>
+                    <p><strong>Designation:</strong> Chief Consultant Medical Gastroentrologist & Hepatologist</p>
+                    <!-- <p><strong>Experience:</strong> 27 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://www.sagarhospitals.in/wp-content/uploads/2024/01/Dr.Arun-L-Naik.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Arun L Naik</h3>
+                    <p><strong>Designation:</strong> Sr. Consultant Neurosurgeon</p>
+                    <!-- <p><strong>Experience:</strong> 44 Years </p>    -->
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800/https://www.sagarhospitals.in/wp-content/uploads/2024/01/dr-priyanka.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Priyanka H K</h3>
+                    <p><strong>Designation:</strong> Consultant Gynaecologist</p>
+                    <!-- <p><strong>Experience:</strong> 21 Years </p>    -->
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

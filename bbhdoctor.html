@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals - Health Consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://bbh.org.in/wp-content/themes/bbh/images/bbh-brand-new.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+        .doctor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .doctor-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .doctor-info:hover {
+            background-color: #0056b3;
+        }
+        .doctor-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .doctor-details {
+            text-align: left;
+            width: 100%;
+        }
+        .doctor-details h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .doctor-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media(min-width: 600px) {
+            .doctor-info {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>List of Doctors</h2>
+        <div class="doctor-list">
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2019/08/ABEY-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Abey Verghese Chacko</h3>
+                    <p><strong>Designation:</strong> Consultant</p>
+                    <p><strong>Experience:</strong> 24 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2019/09/ABHIJITH-scaled-e1591158575109-260x352-1.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Abhijit Jawali A.</h3>
+                    <p><strong>Designation:</strong> Consultant - Orthopaedics & Joint Replacement</p>
+                    <p><strong>Experience:</strong> 9 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2022/11/Dr.-Afsar-Fatima-Photo-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Afsar Fatima</h3>
+                    <p><strong>Designation:</strong> Consultant - Endocrinologist
+                    </p>
+                    <p><strong>Experience:</strong> 5 Years </p>  
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2020/05/PHOTO-2020-06-03-08-20-58-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Ajay Handa</h3>
+                    <p><strong>Designation:</strong>Visiting Consultant - Pulmonology</p>
+                    <p><strong>Experience:</strong> 18 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2024/04/Dr.Anjali-S-Raj-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Anjali S Raj</h3>
+                    <p><strong>Designation:</strong> Consultant Neonatologist</p>
+                    <p><strong>Experience:</strong> 10 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2020/04/DR-ANUPAMA-DARAPU-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Anupama Darapu</h3>
+                    <p><strong>Designation:</strong> Consultant - Radiation Oncology</p>
+                    <p><strong>Experience:</strong> 8 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2024/01/Dr.Ashish-John-Varghese-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Ashish Varghese</h3>
+                    <p><strong>Designation:</strong> Sr. Consultant - ENT</p>
+                    <p><strong>Experience:</strong> 24 Years </p>   
+                </div>
+            </a>
+            <a href="appointment.html" class="doctor-info">
+                <img src="https://bbh.org.in/wp-content/uploads/2019/08/BILCY-260x352.jpg" class="doctor-image">
+                <div class="doctor-details">
+                    <h3>Dr. Bilcy Philip</h3>
+                    <p><strong>Designation:</strong> Dental Consultant</p>
+                    <p><strong>Experience:</strong> 25 Years </p>   
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
